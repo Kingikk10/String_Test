@@ -2,7 +2,7 @@
 #include "string.h"
 #include <iostream>
 #include <cstring>
-
+#include <cassert>
 
 // A few freebies to get past the first couple of tests.
 // These may need to be modified!
