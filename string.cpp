@@ -276,7 +276,7 @@ std::ostream & sfw::operator<<(std::ostream & os, const string & p)
 	return os;
 }
 
-std::istream & sfw::operator>>(std::istream & is, const string & p)
+std::istream & sfw::operator>>(std::istream & is, string & p)
 {
 	// TODO:
 	return is;
