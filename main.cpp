@@ -254,7 +254,7 @@ void TEST_ALL_STRING_STUFF()
 	{
 		//subcript
 		{
-			assert("blah"_sfw[2] == 'l');
+			assert("blah"_sfw[2] == 'a');
 			string b("hmmh");
 			b[2] = 'p';
 			assert(b == "hmph");
