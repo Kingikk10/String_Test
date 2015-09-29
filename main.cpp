@@ -134,7 +134,7 @@ void TEST_ALL_STRING_STUFF()
 			string b(a);
 			string *c = new string(b);
 			delete c;
-			assert(b.length() == 4);
+			assert(b.length() == 3);
 		}
 		mem_test_check();
 		// literal
