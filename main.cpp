@@ -43,7 +43,7 @@ _CrtMemCheckpoint(&s1);\
 					   }while(0)
 
 #endif //glb
-#else
+#else //if release mode, disable tests
 #define mem_test_start()
 #define mem_test_check()
 #endif //debug
