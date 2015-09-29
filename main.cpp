@@ -102,7 +102,8 @@ void TEST_ALL_STRING_STUFF()
 			string b("Dinosaur");
 			string c = string("Dinosaur");
 			delete new string("Dinosaur");
-			delete new string(new char);
+			char *n = nullptr;
+			delete new string(n);
 		}
 		mem_test_check();
 		//array and size
