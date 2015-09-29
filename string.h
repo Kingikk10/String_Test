@@ -164,7 +164,7 @@ namespace sfw
 	// Allows us to work with stream processors (cin/cout)
 	// they can be a little tricky! Don't be afraid to do research.
 	std::ostream &operator<<(std::ostream &os, const string& p); //output stream operator
-	std::istream &operator>>(std::istream &is, const string& p); //input stream operator
+	std::istream &operator>>(std::istream &is, string& p); //input stream operator
 
 }
 
