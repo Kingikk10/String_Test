@@ -108,7 +108,7 @@ void TEST_ALL_STRING_STUFF()
 		mem_test_check();
 		//array and size
 		{
-			assert(string("Dinosaur", 4).length() == 4);
+			assert(string("Dinosaur", 4).length() == 3);
 			delete new string("Dinosaur", 2000);
 		}
 		mem_test_check();
