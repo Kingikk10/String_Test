@@ -6,7 +6,7 @@ DELETE THIS SECTION BEFORE FINAL SUBMISSION
 This is a prototype class that should encapsulate
 dynamic memory management of a character array.
 
-It's functions should seek to take as much advantage
+Its functions should seek to take as much advantage
 as possible of the <cstring> standard library.
 strcpy, strcat, and strcmp will be especially useful.
 
