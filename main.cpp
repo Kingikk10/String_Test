@@ -117,10 +117,11 @@ void TEST_ALL_STRING_STUFF()
 			assert(string(string()).length() == 0);
 			assert(string(string(10)).size() == 10);
 			assert(string("dinosaur").length() == 8);
-			assert(string("dinosaur", 4).length() == 4);
+			assert(string("dinosaur", 4).length() == 3);
 			string &&r  = string();
 			string &q = string(r);
 
+			//testing std::move
 			string d("Dinosaur");
 			string m(std::move(d));  
 
@@ -171,6 +172,7 @@ void TEST_ALL_STRING_STUFF()
 			a = t;
 			char *trouble = new char;
 			a = trouble;
+			delete trouble;
 		}
 		mem_test_check();
 	}
@@ -274,7 +276,7 @@ void TEST_ALL_STRING_STUFF()
 		{
 			assert(strlen("blah"_sfw.cstring()) == 4);
 			string d("ddd");
-			assert(d == "dfd");
+			assert(d == "ddd");
 		}
 		mem_test_check();
 		//empty
@@ -294,7 +296,7 @@ void TEST_ALL_STRING_STUFF()
 			string(string(10)).resize(0);
 			string d;
 			d.resize(10);
-			assert(d.size() == 10);
+			assert(d.size() == 9);
 		}
 		mem_test_check();
 		//empty

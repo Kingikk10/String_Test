@@ -87,7 +87,7 @@ namespace sfw
 
 		string(size_t size); // create an empty string with a given amount of memory.
 		string(const char *a, size_t size);
-						// duplicate data in character array, and set our size to size.
+		// duplicate data in character array, and set our size to size.
 		
 		~string(); // should free (delete) dynamic memory if any is still in use (rule of 5).
 
